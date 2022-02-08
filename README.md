@@ -1,1 +1,1 @@
-project done while studying at RS shcool
+This project I done while I studying at RS shcool
