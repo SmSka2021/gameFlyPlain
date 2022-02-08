@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-gold: #bdae82;
+  --color-black: rgb(13, 16, 87);
+  --color-white: #FFFFFF;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("assets/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("assets/fonts/Inter-Bold.ttf");
+  font-weight: 700;
+}
+
+body {
+  background-color: var(--color-black);  
+  width: 100%;
+  margin: 0 auto;
+  color: var(--color-white);
+  font-family: 'Inter';
+}
+
+.container {
+  background-color: var(--color-black); 
+  margin: 0 auto;
+  padding: 0; 
+}
+
+.header__container { 
+  padding: 5px 35px 0 35px;
+  display: flex;
+  height: 70px;
+  background-color: var(--color-black);  
+  position: relative;
+}
+.rule_block,
+.score_block {
+position: absolute;
+top: 150%;
+left: 35%;
+width: 400px;
+height: 400px;
+z-index: 2;
+background-color: var(--color-black);  
+color:#FFFFFF;
+font-family: 'Inter';
+font-size: 1.3rem;
+line-height: 40px;
+padding: 25px;
+border: 5px dashed yellow;
+text-align: center;
+display: none;
+}
+h3, h4 {
+  color: yellow;
+}
+.btn_ok,
+.btn_record { 
+  width: 100px;
+  height: 35px;
+  background-color:rgb(213, 216, 11);
+  border-radius: 10px;
+  color:blue;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.dispNon {
+  display: block;
+}
+
+.header__container_logo {
+  transition: all, .3s;
+  width: 70px;
+  height: 60px;
+  margin-right: 40px;
+}
+
+.header__container_logo:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.navigation ul {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.navigation {
+  margin-left: auto;
+  width: 470px;
+  margin-right: auto;
+}
+
+.navigation__link {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  line-height: 40px;
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all, .3s;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.navigation__link:hover {
+  color: var(--color-gold);
+}
+.container_img {
+ position: relative;
+ background-image: url(./assets/img/fon-nebo.jpg);
+ background-repeat:no-repeat;
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ justify-content: center;
+}
+#canvas {
+  border: 7px solid blue;
+}
+.btn {
+  position: absolute;
+  bottom: 10px;
+  right: 30%;
+  width: 100px;
+  height: 35px;
+  background-color:rgb(213, 216, 11);
+  border-radius: 10px;
+  color:blue;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.container__footer {
+  background-color: var(--color-black);  
+  max-height: 70px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-white);
+}
+
+.container__footer span:nth-child(2) {
+  margin: 0 17px;
+}
+
+.container__footer a {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-white);
+}
+
+.container__footer a:hover {
+  color: var(--color-gold);
+ 
+}
+.rss:hover{
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+@media screen and (max-width: 700px) {
+  #canvas {
+  width: 500px;
+}
+  .navigation__link,.container__footer {
+    font-size: .9rem;
+    line-height: 30px;
+  }
+ .footer_rs {
+ display: none;
+  }
+  .rule_block,
+.score_block {
+left: 30vw;
+width: 300px;
+height: 300px;
+font-size: .9rem;
+line-height: 20px;
+ }
+}
