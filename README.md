@@ -1,1 +1,1 @@
-This project I done while I studying at RS shcool
+This project I'm make while I'm studying at RS shcool
